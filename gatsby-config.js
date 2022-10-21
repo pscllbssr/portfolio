@@ -3,13 +3,13 @@ module.exports = {
     // Site URL for when it goes live
     siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Pascal Albisser',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Pascal Albisser | Data Journalist`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `Data Journalist at Swiss National Broadcaster & Student MSc Applied Information and Data Science.`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `@pscllbssr`,
     // Optional: Github account URL
     github: `https://github.com/ryanfitzgerald`,
     // Optional: LinkedIn account URL
@@ -19,57 +19,45 @@ module.exports = {
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'SRF Klimamonitor',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'ChromeExtensionKit',
-        description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
-      },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Facts & figures about climate change in switzerland, updated daily.',
+        link: 'https://www.srf.ch/klima',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'SRF Data',
+        description: 'Data Journalist, Lead Frontend & Storytelling, October 2020 - Present',
+        link: 'https://www.srf.ch/data',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'SRF Online',
+        description: 'Frontend Developer, September 2019 - September 2020',
+        link: 'https://www.srf.ch/',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
+        name: 'Freelance, Catatec, Inware AG, Intersim AG',
+        description: 'Web Developer & Multimedia Producer, August 2012 - August 2020',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
+        name: 'MSc Applied Information and Data Science',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'Lucerne University of Applied Sciences and Arts, September 2022 - Present',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'BSc Media Engineering',
+        description: 'Bern University of Applied Sciences, September 2016 - August 2019',
       },
       {
-        name: 'Other',
+        name: 'Software Developer EFZ',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'State Secretariat for Economic Affairs SECO, August 2008 - July 2012',
       },
     ],
   },
