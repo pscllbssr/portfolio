@@ -6,17 +6,18 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SectionAbout from '../components/section-about';
 import SectionBlog from '../components/section-blog';
+import SectionEductaion from '../components/section-education';
 import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
-  const about = get(data, 'site.siteMetadata.about', false);
-  const projects = get(data, 'site.siteMetadata.projects', false);
+  const about = get(data, 'site.siteMetadata.cv_intro', false);
   const posts = data.allMarkdownRemark.edges;
   const experience = get(data, 'site.siteMetadata.experience', false);
   const skills = get(data, 'site.siteMetadata.skills', false);
+  const education = get(data, 'site.siteMetadata.education', false);
   const noBlog = !posts || !posts.length;
 
   return (
@@ -24,8 +25,11 @@ const Index = ({ data }) => {
       <SEO />
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
       {about && <SectionAbout about={about} />}
-      {projects && projects.length && <SectionProjects projects={projects} />}
-      {!noBlog && <SectionBlog posts={posts} />}
+      {skills && skills.length && <SectionSkills skills={skills} />}
+      {education && education.length && <SectionEductaion education={education} />}
+      {experience && experience.length && (
+        <SectionExperience experience={experience} />
+      )}      
     </Layout>
   );
 };
@@ -39,7 +43,7 @@ export const pageQuery = graphql`
         name
         title
         description
-        about
+        cv_intro
         author
         github
         linkedin
@@ -54,6 +58,10 @@ export const pageQuery = graphql`
           link
         }
         skills {
+          name
+          description
+        }
+        education {
           name
           description
         }

@@ -7,16 +7,17 @@ module.exports = {
     // Main Site Title
     title: `Pascal Albisser | Data Journalist`,
     // Description that goes under your name in main bio
-    description: `Data Journalist at Swiss National Broadcaster & Student MSc Applied Information and Data Science.`,
+    description: `Data Journalist at Swiss National Broadcaster, Student MSc Applied Information and Data Science.`,
     // Optional: Twitter account handle
     author: `@pscllbssr`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/pscllbssr`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/pascal-albisser`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Welcome to my place on the web. Here I collect my latest work and write about things I have learnt or stumbled upon searching the web.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    cv_intro: `I currently work as a data journalist at swiss national broadcaster and learn new things as a student in applied information and data science.`,
     projects: [
       {
         name: 'SRF Klimamonitor',
@@ -40,11 +41,28 @@ module.exports = {
       {
         name: 'Freelance, Catatec, Inware AG, Intersim AG',
         description: 'Web Developer & Multimedia Producer, August 2012 - August 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: '',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
+      {
+        name: 'Data Research & Analysis',
+        description:
+          'Web-scraping, processing, exploratory analysis, drawing conclusions. Mostly in Python.',
+      },
+      {
+        name: 'Interactive Data Visualization & Storytelling',
+        description: 'I produce interactive web-graphics to accurately present, explain and tell stories about data.',
+      },
+      {
+        name: 'Web Frontend Development',
+        description:
+          'I develop modern and responsive web applications.',
+      },
+    ],
+    // Optional: List your skills, they must have `name` and `description`.
+    education: [
       {
         name: 'MSc Applied Information and Data Science',
         description:
